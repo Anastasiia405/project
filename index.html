@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ємність для миття овочів та фруктів</title>
+    <style>/* Загальний стиль */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        h1, h2 {
+            color: #333;
+        }
+        
+        .hero {
+            background-color: #f4d3e0;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        
+        .hero p {
+            font-size: 1.2em;
+        }
+        
+        .hero button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .hero button:hover {
+            background-color: #e65a50;
+        }
+        
+        #benefits {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #benefits h2 {
+            font-size: 2em;
+        }
+        
+        .benefit {
+            display: inline-block;
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .benefit img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        
+        #demo {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        #demo video {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        #reviews {
+            background-color: #f4d3e0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        blockquote {
+            background: #fff;
+            border-left: 10px solid #ff6f61;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            font-style: italic;
+        }
+        
+        #special-offer {
+            background-color: #ffefd5;
+            text-align: center;
+            padding: 40px;
+        }
+        
+        #special-offer p {
+            font-size: 1.2em;
+        }
+        
+        #special-offer button {
+            background-color: #ff6f61;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        #special-offer button:hover {
+            background-color: #e65a50;
+        }
+        .product-image {
+        width: 100%;
+        max-width: 600px; /* обмеження по ширині */
+        display: block;
+        margin: 20px auto;
+        border-radius: 10px;
+    }
+        </style>
+</head>
+<body>
+
+    <!-- Головний екран (Hero Section) -->
+    <header class="hero">
+        <h1>Ємність для миття овочів та фруктів</h1>
+        <p>Легке та ефективне очищення вашої продукції</p>
+        <img src="product.jpg" alt= class="product-image">
+    <button onclick="orderNow()">Замовити зараз</button>
+    </header>
+
+    <!-- Секція переваг -->
+    <section id="benefits">
+        <h2>Переваги</h2>
+        <div class="benefit">
+            <img src="clean.png" alt="Швидке миття">
+            <p>Швидке миття та очищення</p>
+        </div>
+        <div class="benefit">
+            <img src="material.png" alt="Безпечний матеріал">
+            <p>Безпечний для їжі матеріал</p>
+        </div>
+        <div class="benefit">
+            <img src="compact.png" alt="Компактний дизайн">
+            <p>Компактний та стильний дизайн</p>
+        </div>
+        <div class="benefit">
+            <img src="timesaving.png" alt="Економія часу">
+            <p>Зручність та економія часу</p>
+        </div>
+    </section>
+
+    <!-- Секція демонстрації -->
+    <section id="demo">
+        <h2>Як користуватись</h2>
+        <video controls>
+            <source src="demo.mp4" type="video/mp4">
+            <source src="videos/demo.webm" type="video/webm">
+            Ваш браузер не підтримує відео.
+        </video>
+    </section>
+
+    <!-- Відгуки -->
+    <section id="reviews">
+        <h2>Відгуки клієнтів</h2>
+        <blockquote>
+            <p>"Чудовий продукт! Дійсно економить час!"</p>
+            <cite>- Марина</cite>
+        </blockquote>
+        <blockquote>
+            <p>"Дуже зручно та просто у використанні."</p>
+            <cite>- Олександр</cite>
+        </blockquote>
+    </section>
+
+    <!-- Спеціальна пропозиція -->
+    <section id="special-offer">
+        <h2>Спеціальна пропозиція</h2>
+        <p>Зробіть замовлення сьогодні та отримайте знижку 10%!</p>
+        <button onclick="orderNow()">Отримати знижку</button>
+    </section>
+
+    <!-- Підключення зовнішнього JavaScript -->
+    <script src="script.js">
+    function orderNow() {
+        alert("Дякуємо за ваш інтерес! Ми зв'яжемося з вами для підтвердження замовлення.");
+    }
+    </script>
+</body>
+</html>
